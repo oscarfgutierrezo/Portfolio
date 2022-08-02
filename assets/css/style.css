@@ -247,6 +247,7 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  padding: 0 20px;
 }
 
 #hero h1 {
