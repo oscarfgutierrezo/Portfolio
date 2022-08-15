@@ -4,6 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+import { skillsList } from "./skills.js";
+import { licencesList } from "./licences.js";
+import { portfolioList } from "./portfolio.js";
+
 (function() {
   "use strict";
 
@@ -258,4 +263,83 @@
    */
   new PureCounter();
 
+
+  // DOM Skills
+  const skillsContainerDOM = document.querySelector('#skills-container');
+
+  skillsList.forEach(skill => {
+    const {name, img} = skill;
+    const skillContainer = document.createElement('div');
+    const skillImage = document.createElement('img');
+      skillImage.classList.add('img-fluid');
+      skillImage.src = img;
+      skillImage.alt = `${name} Logo`;
+      skillImage.style.height = '75px';
+    const skillName = document.createElement('p');
+    skillName.textContent = name;
+      skillName.classList.add('text-center', 'fw-bold');
+    skillContainer.appendChild(skillImage);
+    skillContainer.appendChild(skillName);
+    skillsContainerDOM.appendChild(skillContainer)
+  })
+  
+  // DOM Licences & Certifications
+  const licencesContainerDOM = document.querySelector('#licences-container')
+  licencesList.forEach(licence => {
+    const {name, date, organization} = licence;
+    const licenceContainer = document.createElement('div');
+      licenceContainer.classList.add('resume-item');
+    const licenceTitle = document.createElement('h4');
+      licenceTitle.textContent = name;
+    const licenceDate = document.createElement('h5');
+      licenceDate.textContent = date;
+    const licenceOrganization = document.createElement('em');
+      licenceOrganization.classList.add('d-block');
+      licenceOrganization.textContent = organization
+    licenceContainer.appendChild(licenceTitle);
+    licenceContainer.appendChild(licenceDate);
+    licenceContainer.appendChild(licenceOrganization);
+    licencesContainerDOM.appendChild(licenceContainer)
+  })
+
+  // DOM Portfolio
+  const portfolioContainer = document.querySelector('#portfolio-container');
+  portfolioList.forEach(project => {
+    const { name, img, project_url, repository_url, category } = project;
+    const projectContainer = document.createElement('div');
+      projectContainer.classList.add('col-lg-4', 'col-sm-6', 'portfolio-item', `filter-${category}`);
+    const shadowContainer = document.createElement('div');
+      shadowContainer.classList.add('portfolio-wrap', 'shadow', 'rounded-1');
+    const projectTitle = document.createElement('h5');
+      projectTitle.classList.add('portafolio-item-title');
+      projectTitle.textContent = name;
+    const projectImg = document.createElement('img');
+      projectImg.src = img;
+      projectImg.classList.add('img-fluid');
+      projectImg.alt = `${name} Project Screenshot`;
+    const linksContainer = document.createElement('div');
+      linksContainer.classList.add('portfolio-links');
+    const projectLink = document.createElement('a');
+      projectLink.href = project_url;
+      projectLink.target = '_blank';
+      projectLink.title = 'View';
+    const projectLinkIcon = document.createElement('i');
+      projectLinkIcon.classList.add('bi', 'bi-box-arrow-up-right');
+    const repositoryLink = document.createElement('a');
+      repositoryLink.href = repository_url;
+      repositoryLink.target = '_blank';
+      repositoryLink.title = 'Repository';
+    const repositoryLinkIcon = document.createElement('i');
+      repositoryLinkIcon.classList.add('bi', 'bi-github');
+
+    projectLink.appendChild(projectLinkIcon);
+    repositoryLink.appendChild(repositoryLinkIcon);
+    linksContainer.appendChild(projectLink);
+    linksContainer.appendChild(repositoryLink);
+    shadowContainer.appendChild(projectTitle);
+    shadowContainer.appendChild(projectImg);
+    shadowContainer.appendChild(linksContainer);
+    projectContainer.appendChild(shadowContainer);
+    portfolioContainer.appendChild(projectContainer);
+  })
 })()
