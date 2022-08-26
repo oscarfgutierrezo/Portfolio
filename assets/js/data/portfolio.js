@@ -216,4 +216,11 @@ export const portfolioList = [
         repository_url: 'https://github.com/oscarfgutierrezo/CryptoCompareAPI-Example',
         category: 'js'
     },
+    {
+        name: 'Giphy API',
+        img: './assets/img/portfolio/react-giphyapi.png',
+        project_url: 'https://oscarfgutierrezo.github.io/GiphyAPI-Example/',
+        repository_url: 'https://github.com/oscarfgutierrezo/GiphyAPI-Example',
+        category: 'react'
+    },
 ] 

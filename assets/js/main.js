@@ -5,9 +5,9 @@
 * License: https://bootstrapmade.com/license/
 */
 
-import { skillsList } from "./skills.js";
-import { licencesList } from "./licences.js";
-import { portfolioList } from "./portfolio.js";
+import { skillsList } from "./data/skills.js";
+import { licencesList } from "./data/licences.js";
+import { portfolioList } from "./data/portfolio.js";
 
 (function() {
   "use strict";
