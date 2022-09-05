@@ -223,4 +223,11 @@ export const portfolioList = [
         repository_url: 'https://github.com/oscarfgutierrezo/GiphyAPI-Example',
         category: 'react'
     },
+    {
+        name: 'ToDo App',
+        img: './assets/img/portfolio/react-todoapp.png',
+        project_url: 'https://oscarfgutierrezo.github.io/TodoApp-Example/',
+        repository_url: 'https://github.com/oscarfgutierrezo/TodoApp-Example/',
+        category: 'react'
+    },
 ] 
