@@ -30,5 +30,9 @@ export const skillsList = [
     {
         name: 'React',
         img: './assets/img/skills/react-logo.png'
+    },
+    {
+        name: 'Jest',
+        img: './assets/img/skills/jest-logo.png'
     }
 ]
