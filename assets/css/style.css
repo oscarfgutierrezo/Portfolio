@@ -97,6 +97,7 @@ h6 {
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 #header .profile h1 a,
@@ -105,19 +106,24 @@ h6 {
   text-decoration: none;
 }
 
+#header .profile .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 #header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background: #212431;
   color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
   border-radius: 50%;
-  text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 #header .profile .social-links a:hover {
@@ -334,6 +340,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about img {
+  border-radius: 5px;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -341,14 +351,11 @@ section {
 }
 
 .about .content ul {
-  list-style: none;
   padding: 0;
-}
-
-.about .content ul li {
-  margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
 }
 
 .about .content ul strong {
@@ -362,18 +369,27 @@ section {
   line-height: 0;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
-}
-
-.about .link {
-  color: #272829;
+.about .content .link {
+  color: #149ddd;
   text-decoration: none;
 }
 
-.about .link:hover {
+.about .content .link:hover {
   color: #149ddd;
   text-decoration: underline;
+}
+
+.about .content .whatsapp-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .about .content .whatsapp-mobile {
+    display: none;
+  }
+  .about .content .whatsapp-desktop {
+    display: inline;
+  }
 }
 
 /*--------------------------------------------------------------

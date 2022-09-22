@@ -21,6 +21,13 @@ export const portfolioList = [
         category: 'css'
     },
     {
+        name: 'Trafalgar Page',
+        img: './assets/img/portfolio/bootstrap-trafalgar.png',
+        project_url: 'https://oscarfgutierrezo.github.io/Trafalgar-Example/',
+        repository_url: 'https://github.com/oscarfgutierrezo/Trafalgar-Example',
+        category: 'bootstrap'
+    },
+    {
         name: 'Headers',
         img: './assets/img/portfolio/bootstrap-headers.png',
         project_url: 'https://oscarfgutierrezo.github.io/Headers-Example/',
@@ -77,11 +84,11 @@ export const portfolioList = [
         category: 'bootstrap'
     },
     {
-        name: 'Trafalgar Page',
-        img: './assets/img/portfolio/bootstrap-trafalgar.png',
-        project_url: 'https://oscarfgutierrezo.github.io/Trafalgar-Example/',
-        repository_url: 'https://github.com/oscarfgutierrezo/Trafalgar-Example',
-        category: 'bootstrap'
+        name: 'LaslesVPN Page',
+        img: './assets/img/portfolio/tailwind-laslesvpn.png',
+        project_url: 'https://oscarfgutierrezo.github.io/LaslesVPN-Example/',
+        repository_url: 'https://github.com/oscarfgutierrezo/LaslesVPN-Example',
+        category: 'tailwind'
     },
     {
         name: 'Components',
@@ -172,13 +179,6 @@ export const portfolioList = [
         img: './assets/img/portfolio/tailwind-pages.png',
         project_url: 'https://oscarfgutierrezo.github.io/Pages-Example/',
         repository_url: 'https://github.com/oscarfgutierrezo/Pages-Example',
-        category: 'tailwind'
-    },
-    {
-        name: 'LaslesVPN Page',
-        img: './assets/img/portfolio/tailwind-laslesvpn.png',
-        project_url: 'https://oscarfgutierrezo.github.io/LaslesVPN-Example/',
-        repository_url: 'https://github.com/oscarfgutierrezo/LaslesVPN-Example',
         category: 'tailwind'
     },
     {
