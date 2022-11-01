@@ -230,4 +230,11 @@ export const portfolioList = [
         repository_url: 'https://github.com/oscarfgutierrezo/TodoApp-Example/',
         category: 'react'
     },
+    {
+        name: 'Hazard',
+        img: './assets/img/portfolio/react-hazard.png',
+        project_url: 'https://oscarfgutierrezo.github.io/Hazard-Example/',
+        repository_url: 'https://github.com/oscarfgutierrezo/Hazard-Example',
+        category: 'react'
+    },
 ] 
