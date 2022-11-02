@@ -34,5 +34,9 @@ export const skillsList = [
     {
         name: 'Jest',
         img: './assets/img/skills/jest-logo.png'
+    },
+    {
+        name: 'Material UI',
+        img: './assets/img/skills/material-logo.png'
     }
 ]
