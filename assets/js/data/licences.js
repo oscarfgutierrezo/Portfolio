@@ -1,5 +1,10 @@
 export const licencesList = [
     {
+        name: 'A2 - Pre-Intermediate English Course',
+        date: 'Nov 2022',  
+        organization: 'Perfectly Spoken'
+    },
+    {
         name: 'A1 - Elementary English Course',
         date: 'Oct 2022',  
         organization: 'Perfectly Spoken'
