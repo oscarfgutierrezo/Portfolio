@@ -32,6 +32,10 @@ export const skillsList = [
         img: './assets/img/skills/react-logo.png'
     },
     {
+        name: 'Redux',
+        img: './assets/img/skills/redux-logo.png'
+    },
+    {
         name: 'Jest',
         img: './assets/img/skills/jest-logo.png'
     },

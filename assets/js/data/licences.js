@@ -49,4 +49,9 @@ export const licencesList = [
         date: 'Aug 2022',  
         organization: 'Udemy'
     },
+    {
+        name: 'A1 - Elementary English Course',
+        date: 'Oct 2022',  
+        organization: 'Perfectly Spoken'
+    },
 ]
