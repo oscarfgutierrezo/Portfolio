@@ -217,6 +217,13 @@ export const portfolioList = [
         category: 'js'
     },
     {
+        name: 'Rock, paper & scissors',
+        img: './assets/img/portfolio/js-rockpaperscissors.png',
+        project_url: 'https://oscarfgutierrezo.github.io/RockPaperScissors/',
+        repository_url: 'https://github.com/oscarfgutierrezo/RockPaperScissors',
+        category: 'js'
+    },
+    {
         name: 'Hazard',
         img: './assets/img/portfolio/react-hazard.png',
         project_url: 'https://oscarfgutierrezo.github.io/Hazard-Example/',
