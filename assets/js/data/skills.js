@@ -42,5 +42,13 @@ export const skillsList = [
     {
         name: 'Material UI',
         img: './assets/img/skills/material-logo.png'
+    },
+    {
+        name: 'Express JS',
+        img: './assets/img/skills/express-logo.png'
+    },
+    {
+        name: 'Node JS',
+        img: './assets/img/skills/node-logo.png'
     }
 ]
