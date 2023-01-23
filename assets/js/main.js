@@ -5,9 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-import { skillsList } from "./data/skills.js";
-import { licencesList } from "./data/licences.js";
-import { portfolioList } from "./data/portfolio.js";
+import { skillsList, licencesList, portfolioList, experienceList, educationList } from "./data/index.js";
 
 (function() {
   "use strict";
@@ -264,12 +262,72 @@ import { portfolioList } from "./data/portfolio.js";
   new PureCounter();
 
 
+  // DOM Experience
+  const experienceContainerDOM = document.querySelector('#experience-container');
+
+  experienceList.forEach(experience => {
+    const {rol, time, company, responsibilities} = experience;
+    const experienceContainer = document.createElement('div');
+      experienceContainer.classList.add('resume-item');
+    const experienceRol = document.createElement('h4');
+      experienceRol.textContent = rol;
+    const experienceTime = document.createElement('h5');
+      experienceTime.textContent = time;
+    const experienceCompany = document.createElement('p');
+    const experienceCompanyEm = document.createElement('em');
+      experienceCompanyEm.textContent = company
+      experienceCompany.appendChild(experienceCompanyEm);
+    const experienceResponsibilitiesList = document.createElement('ul');
+    responsibilities.forEach(responsibility => {
+      const responsibilityItem = document.createElement('li');
+        responsibilityItem.textContent = responsibility;
+      experienceResponsibilitiesList.appendChild(responsibilityItem);
+    })
+
+    experienceContainer.appendChild(experienceRol);
+    experienceContainer.appendChild(experienceTime);
+    experienceContainer.appendChild(experienceCompany);
+    experienceContainer.appendChild(experienceResponsibilitiesList);
+
+    experienceContainerDOM.appendChild(experienceContainer);
+  })
+
+
+  // DOM Education
+  const educationContainerDOM = document.querySelector('#education-container')
+  educationList.forEach( education => {
+    const { degree, time, institution, description } = education;
+    const educationItemContainer = document.createElement('div');
+      educationItemContainer.classList.add('resume-item');
+    const educationDegree = document.createElement('h4');
+      educationDegree.textContent = degree;
+    const educationTime = document.createElement('h5');
+      educationTime.textContent = time;
+    const educationInstitution = document.createElement('p');
+    const educationInstitutionEm = document.createElement('em');
+      educationInstitutionEm.textContent = institution;
+      educationInstitution.appendChild(educationInstitutionEm);
+    const educationDescriptionList = document.createElement('ul');
+    description.forEach( item => {
+      const descriptionItem = document.createElement('li');
+        descriptionItem.textContent = item;
+      educationDescriptionList.appendChild(descriptionItem);
+    })
+
+    educationItemContainer.appendChild(educationDegree);
+    educationItemContainer.appendChild(educationTime);
+    educationItemContainer.appendChild(educationInstitution);
+    educationItemContainer.appendChild(educationDescriptionList);
+
+    educationContainerDOM.appendChild(educationItemContainer);
+  })
+
   // DOM Skills
   const skillsContainerDOM = document.querySelector('#skills-container');
 
-  skillsList.forEach(skill => {
+  skillsList.forEach( skill => {
     const {name, img} = skill;
-    const skillContainer = document.createElement('div');
+    const skillItemContainer = document.createElement('div');
     const skillImage = document.createElement('img');
       skillImage.classList.add('img-fluid');
       skillImage.src = img;
@@ -278,17 +336,18 @@ import { portfolioList } from "./data/portfolio.js";
     const skillName = document.createElement('p');
     skillName.textContent = name;
       skillName.classList.add('text-center', 'fw-bold');
-    skillContainer.appendChild(skillImage);
-    skillContainer.appendChild(skillName);
-    skillsContainerDOM.appendChild(skillContainer)
+    skillItemContainer.appendChild(skillImage);
+    skillItemContainer.appendChild(skillName);
+    skillsContainerDOM.appendChild(skillItemContainer)
   })
   
   // DOM Licences & Certifications
-  const licencesContainerDOM = document.querySelector('#licences-container')
+  const licencesContainerDOM = document.querySelector('#licences-container');
+  
   licencesList.forEach(licence => {
     const {name, date, organization} = licence;
-    const licenceContainer = document.createElement('div');
-      licenceContainer.classList.add('resume-item');
+    const licenceItemContainer = document.createElement('div');
+      licenceItemContainer.classList.add('resume-item');
     const licenceTitle = document.createElement('h4');
       licenceTitle.textContent = name;
     const licenceDate = document.createElement('h5');
@@ -296,10 +355,10 @@ import { portfolioList } from "./data/portfolio.js";
     const licenceOrganization = document.createElement('em');
       licenceOrganization.classList.add('d-block');
       licenceOrganization.textContent = organization
-    licenceContainer.appendChild(licenceTitle);
-    licenceContainer.appendChild(licenceDate);
-    licenceContainer.appendChild(licenceOrganization);
-    licencesContainerDOM.appendChild(licenceContainer)
+    licenceItemContainer.appendChild(licenceTitle);
+    licenceItemContainer.appendChild(licenceDate);
+    licenceItemContainer.appendChild(licenceOrganization);
+    licencesContainerDOM.appendChild(licenceItemContainer)
   })
 
   // DOM Portfolio

@@ -50,5 +50,9 @@ export const skillsList = [
     {
         name: 'Node JS',
         img: './assets/img/skills/node-logo.png'
+    },
+    {
+        name: 'MySQL',
+        img: './assets/img/skills/mysql-logo.png'
     }
 ]
