@@ -1,6 +1,6 @@
 export const experienceList = [
   {
-    rol: 'Frontend Developer',
+    rol: 'Junior Software Developer',
     time: 'Dic 2022 - Current',
     company: 'Asiste Ingeniería SAS, Bogotá D.C., Colombia',
     responsibilities: [
