@@ -6,7 +6,11 @@ export const experienceList = [
     responsibilities: [
       'Development and maintenance of a platform to store, consult and quality control over audio recordings of phone sales. (React, Node, Express, MySQL).',
       'Maintenance and features development of a platform to record and track the sales made by the company. (React, Node, Express, MySQL).',
-      'Maintenance and features development of a platform to chart the data related to license status acquired by the clients. (PHP, Javascript, MySQL).'
+      'Maintenance and features development of a platform to chart the data related to license status acquired by the clients. (PHP, Javascript, MySQL).',
+      'Development and maintenance of a desktop application to centralize the resources and applications required and used by agents (Python, Pyqt5).'
+    ],
+    keyAccomplishments: [
+      'By developing a desktop application that centralizes all necessary resources and blocks unauthorized functionalities and access in the Windows operating system, we achieved strict control over access to unauthorized applications and URLs by agents, significantly improving the security and efficiency in managing sensitive information for the company.'
     ]
   },
   {
@@ -17,7 +21,8 @@ export const experienceList = [
       'Internal website layout for client companies using CSS / BEM methodology, Bootstrap 5 y Tailwind 3.',
       'Maintenance and refactoring of website functionalities using Javascript.',
       'Maintenance, refactoring and componentization of websites built with React.'
-    ]
+    ],
+    keyAccomplishments: []
   },
   {
     rol: 'Social Studies Teacher',
@@ -27,6 +32,10 @@ export const experienceList = [
       'Social studies teacher in fourth, fifth and sixth grades.',
       'Monitoring and accompaniment of training and learning processes of the students as well as the development of their interpersonal relationships.',
       'Design, execution and evaluation of classroom projects related to the Social Sciences curriculum.'
+    ],
+    keyAccomplishments: [
+      'Enhanced interdisciplinarity in the classroom through the design and implementation of Maker projects.',
+      'Improved comprehension of social science topics by designing and implementing classroom projects that are tailored to the context and prior knowledge of students.'
     ]
   }
 ]

@@ -266,7 +266,9 @@ import { skillsList, licencesList, portfolioList, experienceList, educationList 
   const experienceContainerDOM = document.querySelector('#experience-container');
 
   experienceList.forEach(experience => {
-    const {rol, time, company, responsibilities} = experience;
+    const {rol, time, company, responsibilities, keyAccomplishments} = experience;
+    console.log(keyAccomplishments === false);
+    console.log(keyAccomplishments);
     const experienceContainer = document.createElement('div');
       experienceContainer.classList.add('resume-item');
     const experienceRol = document.createElement('h4');
@@ -277,17 +279,33 @@ import { skillsList, licencesList, portfolioList, experienceList, educationList 
     const experienceCompanyEm = document.createElement('em');
       experienceCompanyEm.textContent = company
       experienceCompany.appendChild(experienceCompanyEm);
+    const experienceResponsibilitiesTitle = document.createElement('strong')
+      experienceResponsibilitiesTitle.textContent = 'Responsibilities'
     const experienceResponsibilitiesList = document.createElement('ul');
     responsibilities.forEach(responsibility => {
       const responsibilityItem = document.createElement('li');
         responsibilityItem.textContent = responsibility;
       experienceResponsibilitiesList.appendChild(responsibilityItem);
     })
+    const experienceKeyAccomplishmentsTitle = document.createElement('strong');
+      experienceKeyAccomplishmentsTitle.textContent = 'Key Accomplishments';
+    const experienceKeyAccomplishmentsList = document.createElement('ul');
+    keyAccomplishments.forEach(keyAccomplishment => {
+      const keyAccomplishmentItem = document.createElement('li');
+      keyAccomplishmentItem.textContent = keyAccomplishment;
+      experienceKeyAccomplishmentsList.appendChild(keyAccomplishmentItem);
+    })
 
     experienceContainer.appendChild(experienceRol);
     experienceContainer.appendChild(experienceTime);
     experienceContainer.appendChild(experienceCompany);
+    experienceContainer.appendChild(experienceResponsibilitiesTitle);
     experienceContainer.appendChild(experienceResponsibilitiesList);
+
+    if (keyAccomplishments.length > 0){
+      experienceContainer.appendChild(experienceKeyAccomplishmentsTitle);
+      experienceContainer.appendChild(experienceKeyAccomplishmentsList);
+    }
 
     experienceContainerDOM.appendChild(experienceContainer);
   })
