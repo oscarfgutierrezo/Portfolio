@@ -15,12 +15,12 @@ export const experienceList = [
   },
   {
     rol: 'Frontend Developer',
-    time: 'Feb 2022 - Aug 2022',
-    company: 'Retter SAS, Bogotá D.C., Colombia',
+    time: 'Jun 2022 - Dic 2022',
+    company: 'Cosva, Bogotá D.C., Colombia',
     responsibilities: [
-      'Internal website layout for client companies using CSS / BEM methodology, Bootstrap 5 y Tailwind 3.',
-      'Maintenance and refactoring of website functionalities using Javascript.',
-      'Maintenance, refactoring and componentization of websites built with React.'
+      'Development and Optimization of Interactive Landing Pages using CSS, Tailwind, Bootstrap, and JavaScript.',
+      'Development, Refactoring, and Optimization of Modern Web Applications with React, Tailwind, Bootstrap, and Material UI.',
+      'Contribution to Full Stack Web Applications Development with Express (Routes, Controllers, and Services).'
     ],
     keyAccomplishments: []
   },
